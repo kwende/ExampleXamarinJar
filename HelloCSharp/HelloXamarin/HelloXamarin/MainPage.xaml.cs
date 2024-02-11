@@ -16,7 +16,6 @@ namespace HelloXamarin
 
         private void MyButton_Clicked(object sender, EventArgs e)
         {
-            ResultLabel.Text = _acs.doIt().ToString();
         }
     }
 }

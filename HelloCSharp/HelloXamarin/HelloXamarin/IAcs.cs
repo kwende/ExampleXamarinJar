@@ -7,7 +7,7 @@ namespace HelloXamarin
     {
         Task Initialize(string acsConnectionString);
         Task<string> CreateUserAccessToken(string acsUserId, TimeSpan tokenDuration);
-        Task<string> StartCall(string callerAcsUserId, string calleeAcsId, TimeSpan callTokenDuration);
+        Task<string> StartCall(string callerAcsUserToken, string calleeAcsId, TimeSpan callTokenDuration);
         Task EndCall(string callId);
     }
 }
