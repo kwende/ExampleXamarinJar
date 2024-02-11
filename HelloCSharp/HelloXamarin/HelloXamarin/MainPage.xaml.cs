@@ -14,8 +14,13 @@ namespace HelloXamarin
             _acs = acs;
         }
 
-        private void MyButton_Clicked(object sender, EventArgs e)
+        private async void MyButton_Clicked(object sender, EventArgs e)
         {
+            await _acs.Initialize(AcsConnectionStringEntry.Text);
+
+            var token = await _acs.CreateUserAccessToken(AcsCallerIdEntry.Text, TimeSpan.FromHours(2));
+
+            await _acs.StartCall(token, AcsCalleeIdEntry.Text, TimeSpan.FromHours(2));
         }
     }
 }

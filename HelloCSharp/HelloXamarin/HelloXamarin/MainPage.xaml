@@ -19,6 +19,9 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+        <Entry x:Name="AcsConnectionStringEntry" Placeholder="Connection String"></Entry>
+        <Entry x:Name="AcsCallerIdEntry" Placeholder="Caller's ID"></Entry>
+        <Entry x:Name="AcsCalleeIdEntry" Placeholder="Callee's ID"></Entry>
         <Button x:Name="MyButton" Clicked="MyButton_Clicked" Text="Click me"></Button>
         <Label x:Name="ResultLabel"></Label>
     </StackLayout>
