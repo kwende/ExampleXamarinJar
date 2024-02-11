@@ -7,7 +7,16 @@ import com.azure.android.communication.calling.CallClient;
 import com.azure.android.communication.calling.StartCallOptions;
 
 public class Acs {
+
+    private CallAgent _callAgent;
+
     public int doIt(){
         return 5;
+    }
+
+    public String startCall(String callerAcsToken, String calleeAcsUserId){
+
+
+        return "";
     }
 }

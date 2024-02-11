@@ -22,3 +22,4 @@
 ### Links and handy tidbits: 
 - https://developer.android.com/studio/projects/android-library
 - https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/getting-started-with-calling?pivots=platform-android&tabs=uwp
+- If Intellisense stops working: File > Build > Rebuild Project, and then File > Invalidate Caches > Invalidate and Restart. Intellisense works again. 
