@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.helloxamarin" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" 
+package="com.companyname.helloxamarin"  xmlns:tools="http://schemas.android.com/tools" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33" />
-	<application android:label="HelloXamarin.Android" android:theme="@style/MainTheme"></application>
+	<application tools:replace='android:label' android:label="HelloXamarin.Android" android:theme="@style/MainTheme"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />

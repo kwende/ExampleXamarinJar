@@ -73,9 +73,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AboutResources.txt" />
-    <None Include="Assets\AboutAssets.txt" />
-    <None Include="Properties\AndroidManifest.xml" />
+    <AndroidLibrary Include="libs\azure-communication-calling-2.6.0.aar" Bind="false" />
+    <AndroidLibrary Include="libs\azure-communication-common-1.1.0.aar" Bind="false" />
+    <AndroidLibrary Include="libs\azure-core-1.0.0-beta.12.aar" Bind="false" />
+    <AndroidLibrary Include="libs\azure-core-logging-1.0.0-beta.12.aar" Bind="false" />
+    <AndroidLibrary Include="libs\threetenabp-1.3.1.aar" Bind="false" />
+    <AndroidLibrary Include="Resources\AboutResources.txt" />
+    <AndroidLibrary Include="Assets\AboutAssets.txt" />
+    <AndroidLibrary Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />

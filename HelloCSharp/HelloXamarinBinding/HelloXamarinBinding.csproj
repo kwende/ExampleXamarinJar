@@ -48,12 +48,66 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\app-debug.aar" />
+    <AndroidLibrary Include="Jars\app-debug.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
     <TransformFile Include="Transforms\EnumFields.xml" />
     <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\android-retrofuture-1.7.4.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\android-retrostreams-1.7.4.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\constraintlayout-solver-2.0.1.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\error_prone_annotations-2.15.0.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\gson-2.10.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\jackson-annotations-2.12.7.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\jackson-core-2.12.7.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\jackson-databind-2.12.7.1.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\kotlin-stdlib-1.8.22.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\kotlin-stdlib-common-1.8.22.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\kotlin-stdlib-jdk7-1.8.22.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\kotlin-stdlib-jdk8-1.8.22.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\kotlinx-coroutines-android-1.6.4.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\kotlinx-coroutines-core-jvm-1.6.4.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\listenablefuture-1.0.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\resourceinspection-annotation-1.0.1.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\slf4j-api-1.7.32.jar" Bind="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\threetenbp-1.5.1-no-tzdb.jar" Bind="false" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

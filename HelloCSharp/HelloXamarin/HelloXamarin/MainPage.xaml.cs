@@ -20,7 +20,7 @@ namespace HelloXamarin
 
             var token = await _acs.CreateUserAccessToken(AcsCallerIdEntry.Text, TimeSpan.FromHours(2));
 
-            await _acs.StartCall(token, AcsCalleeIdEntry.Text, TimeSpan.FromHours(2));
+            var result = await _acs.StartCall(token, AcsCalleeIdEntry.Text, TimeSpan.FromHours(2));
         }
     }
 }
