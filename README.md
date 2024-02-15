@@ -23,3 +23,4 @@
 - https://developer.android.com/studio/projects/android-library
 - https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/getting-started-with-calling?pivots=platform-android&tabs=uwp
 - If Intellisense stops working: File > Build > Rebuild Project, and then File > Invalidate Caches > Invalidate and Restart. Intellisense works again. 
+- To find the dependencies: a) [Environment]::SetEnvironmentVariable('JAVA_HOME', "D:\Program Files\Android\Android Studio\jbr") to set JAVA_HOME, then b) .\gradlew.bat app:dependencies in the "HelloJava" project dir. This will show all of the dependency tree. 
