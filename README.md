@@ -36,9 +36,10 @@
             into("$buildDir/libs/debug")
         }
         ```
-        ...what these functions do is allow you to print the various configurations (of which debugRuntimeClasspath is one) and use the configurations to copy dependencies; one of which is debugRuntimeClasspath. I'm not 100% sure how this 
+        what these functions do is allow you to print the various configurations (of which debugRuntimeClasspath is one) and use the configurations to copy dependencies; one of which is debugRuntimeClasspath. I'm not 100% sure how this 
         works, but functionally it gets the list of all dependencies and transitive dependencies and feeds it to the "from" function. The "into" function seems to take this list and copy the files in the list to the directory specified. In short: 
         this function gets all the dependencies and dumps them into a single directory. 
+        
         2) Then invoke these functions using gradlew. First: *gradlew.bat printConfigurations*. This should list the configuration options. Look for "*runtimeClassPath" and choose the appropriate one to replace "debugRuntimeClasspath"
         in the getByName function (or keep debugRuntimeClasspath if appropriate). This will dump the dependency tree into *$buildDir/libs/debug*
         3) And now that you have all of the JAR/AAR file that are dependencies for your, copy the JAR files to the binding library. And the AAR files to a sub-folder in your Xamarin Android project. 

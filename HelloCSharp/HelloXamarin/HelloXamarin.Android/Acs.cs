@@ -25,6 +25,11 @@ namespace HelloXamarin.Droid
             throw new NotImplementedException();
         }
 
+        public Task<string> GetStatus()
+        {
+            return Task.FromResult(_acs.CallState);
+        }
+
         public Task Initialize(string acsConnectionString)
         {
             _acsConnectionString = acsConnectionString;

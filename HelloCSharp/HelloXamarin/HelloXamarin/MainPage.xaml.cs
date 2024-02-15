@@ -22,5 +22,10 @@ namespace HelloXamarin
 
             var result = await _acs.StartCall(token, AcsCalleeIdEntry.Text, TimeSpan.FromHours(2));
         }
+
+        private async void GetStatusButton_Clicked(object sender, EventArgs e)
+        {
+            ResultLabel.Text = await _acs.GetStatus();
+        }
     }
 }
