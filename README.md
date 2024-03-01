@@ -54,5 +54,6 @@
 - If Intellisense stops working: File > Build > Rebuild Project, and then File > Invalidate Caches > Invalidate and Restart. Intellisense works again. 
 - To find the dependencies: 
     1) [Environment]::SetEnvironmentVariable('JAVA_HOME', "D:\Program Files\Android\Android Studio\jbr") to set JAVA_HOME, then 
-    2) .\gradlew.bat app:dependencies in the "HelloJava" project dir. This will show all of the dependency tree. 
+    2) .\gradlew.bat app:dependencies in the "HelloJava" project dir. This will show all of the dependency tree.
+- https://developer.android.com/studio/projects/android-library#Convert
 
